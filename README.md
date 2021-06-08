@@ -47,5 +47,5 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 
 ### Want to know more about me?
 ## Follow Me
-<a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
+<a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" width="30"></a>
 
