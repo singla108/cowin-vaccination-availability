@@ -14,7 +14,7 @@ import csv
 st.set_page_config(layout='wide',
                    initial_sidebar_state='collapsed',
                    page_icon="Vaccination.png",
-                   page_title="COVID-19 NCR Vaccination Slot Availability")
+                   page_title="Vaccination Slot Availability")
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True)
 
@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('CoWIN NCR vaccination slot availability application for today + 5 days')
+st.success('Delhi NCR COVID-19 vaccination slot availability using public CoWIN APIs for today + 5 days')
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
@@ -68,7 +68,7 @@ for DISTRICT_NAME in district_inp:
             temp_district_id = mapping_dict.loc[:, "district id"].values.item()
             temp_districts.append(temp_district_id)
 
-st.write ('Selected NCR Districts to fetch data')
+st.success ('Selected Delhi NCR Districts to fetch data')
 st.success (district_inp) 
 
     
