@@ -44,8 +44,3 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 -   You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
-
-### Want to know more about me?
-## Follow Me
-<a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" width="30"></a>
-
