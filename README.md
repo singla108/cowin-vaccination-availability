@@ -3,7 +3,7 @@ Script to check the available NCR slots for Covid-19 Vaccination Centers from Co
 
 Show your support by starring the repository 😊
 
-Reference: Cowin Vaccination Slot Avaiability application by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability). 
+Reference: Cowin Vaccination Slot application by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability)
 
 # Installing Python
 Python is a programming language that is powerful but easy to learn. It is free, platform-independent.
@@ -48,5 +48,3 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 
 <a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
 
-<!--- <h3 align="center">Show your &nbsp;❤️&nbsp; & support by starring the repository!</h3>-->
-<h3 align="center">Show your support by starring the repository 😊</h3>
