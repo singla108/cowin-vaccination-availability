@@ -58,6 +58,7 @@ def footer(inp_views):
         br(),
         "Developed by: ",
         link("https://github.com/singla108", "Ashish Singla"),
-        "Program code is available at github: https://github.com/singla108/cowin-vaccination-availability to refer",
+          br(),
+        "Program code is available at github to refer : ",  link("https://github.com/singla108/cowin-vaccination-availability")
       ]
     layout(*myargs)
