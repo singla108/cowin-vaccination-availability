@@ -1,7 +1,9 @@
 # CoWIN vaccination slot availability using Python
 Script to check the available NCR slots for Covid-19 Vaccination Centers from CoWIN API in India. This program CANNOT book slots automatically, you need to use CoWIN website to book the slots. 
 
-This work took reference from the work done by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability) while enhancing it. 
+Show your support by starring the repository 😊
+
+Reference: Cowin Vaccination Slot Avaiability application by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability). 
 
 # Installing Python
 Python is a programming language that is powerful but easy to learn. It is free, platform-independent.
