@@ -54,12 +54,11 @@ def layout(*args):
 
 def footer(inp_views):
     myargs = [
+        
         "Page Visits - ", str(inp_views),
-        br(),
-        "Developed by: ",
+        "  Developed by: ",
         link("https://github.com/singla108", "Ashish Singla"),
-          br(),
-        "Program code is available at github to refer : ",  link("https://github.com/singla108/cowin-vaccination-availability", "GitHub"),
+        "  Program code is available at github to refer : ",  link("https://github.com/singla108/cowin-vaccination-availability", "GitHub"),
         "   ",
       ]
     layout(*myargs)
