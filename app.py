@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('Delhi NCR COVID-19 vaccination slot current availability using public CoWIN APIs for today + 5 days. Please use CoWIN to book your vaccination slots')
+st.success('Current vaccination slot availability for Delhi NCR region using public CoWIN APIs [for today + 5 days]. Please use CoWIN site to book your vaccination slot')
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
@@ -68,7 +68,7 @@ for DISTRICT_NAME in district_inp:
             temp_district_id = mapping_dict.loc[:, "district id"].values.item()
             temp_districts.append(temp_district_id)
 
-st.success ('Selected Delhi NCR Districts to fetch data')
+st.success ('Selected Delhi NCR districts to fetch data')
 st.success (district_inp) 
 
     
