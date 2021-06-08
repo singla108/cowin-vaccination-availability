@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('Current vaccination slot availability for Delhi NCR region using public CoWIN APIs [for today + 2 days]. Please use CoWIN site to book your vaccination slot')
+st.success('Current vaccination slot availability for Delhi NCR region using public CoWIN APIs. Please use CoWIN site to book your vaccination slot')
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
