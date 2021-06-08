@@ -52,7 +52,6 @@ rename_mapping = {
 
 
 st.success('CoWIN NCR vaccination slot availability application for today + 5 days')
-st.write('Program code is available at github: https://github.com/singla108/cowin-vaccination-availability You can download, modify the code for districts to run on your personal machine') 
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
