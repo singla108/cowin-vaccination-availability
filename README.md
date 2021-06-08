@@ -1,11 +1,13 @@
 # CoWIN vaccination slot availability using Python
-Script to check the available NCR slots for Covid-19 Vaccination Centers from CoWIN API in India. This program CANNOT book slots automatically, you need to use CoWIN website to book the slots. 
+Python Program to check available NCR vaccine slots for Covid-19 Vaccination Centers using CoWIN Public API in India. This program CANNOT book slots automatically, you need to use CoWIN website to book the slots. 
 
 Show your support by starring the repository 😊
 
 Reference: Cowin Vaccination Slot application by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability)
 
-# Installing Python
+# Use the following steps to update and run program on your machine 
+
+# Installing Python to run the program
 Python is a programming language that is powerful but easy to learn. It is free, platform-independent.
 
 ## Recommended Method: Anaconda
@@ -31,10 +33,10 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 4. Click `New Notebook`, which should open a new page.
 
 # Usage
-- Clone the repository. using `! Git Clone https://github.com/singla108/cowin-vaccination-availability.git`
+- Clone the repository. using `Git Clone https://github.com/singla108/cowin-vaccination-availability.git`
 - The tool only works with Indian IP addresses so disconnect your VPN if needed.
 - Enter the command - `cd cowin-vaccination-availability/`
-- Install all the dependencies - `! pip3 install -r requirements.txt`
+- Install all the dependencies - `pip3 install -r requirements.txt`
 - Run Anaconda Promt (Run as Administrator) From Start Menu.
 - Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\cowin-vaccination-availability`
 - Run `streamlit run app.py`
@@ -45,6 +47,5 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 
 ### Want to know more about me?
 ## Follow Me
-
 <a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
 
