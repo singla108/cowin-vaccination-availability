@@ -68,7 +68,7 @@ for DISTRICT_NAME in district_inp:
             temp_district_id = mapping_dict.loc[:, "district id"].values.item()
             temp_districts.append(temp_district_id)
 
-st.success ('Selected Delhi NCR districts to fetch data')
+st.success ('Selected Delhi NCR districts:')
 st.success (district_inp) 
 
     
