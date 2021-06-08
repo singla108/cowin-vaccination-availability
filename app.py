@@ -51,7 +51,8 @@ rename_mapping = {
     }
 
 
-st.success('CoWIN NCR vaccination slot availability for today + 5 days - Developed by Ashish Singla')
+st.success('CoWIN NCR vaccination slot availability application for today + 5 days || Developed by Ashish Singla')
+st.write('Program code is available in github at: https://github.com/singla108/cowin-vaccination-availability') 
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
@@ -61,14 +62,14 @@ temp_districts = []
 numdays = 5 # [PLEASE CHANGE] can give number of days i.e. today + days to get the data from COWIN 
 
 # [PLEASE CHANGE] provide districts to get data, please refer district_mapping.csv to change if required. 
-district_inp = ['Gurgaon', 'Faridabad', 'Gautam Buddha Nagar', 'New Delhi', 'South Delhi', 'South East Delhi', 'South West Delhi','Central Delhi','East Delhi','North Delhi', 'North East Delhi', 'North West Delhi','Shahdara', 'West Delhi'] 
+district_inp = ['Gurgaon', 'Faridabad', 'Gautam Buddha Nagar', 'New Delhi', 'South Delhi', 'South East Delhi', 'South West Delhi','Central Delhi','East Delhi','Shahdara','North Delhi', 'North East Delhi','North West Delhi','West Delhi'] 
     
 for DISTRICT_NAME in district_inp:
             mapping_dict = filter_column(mapping_df, "district name", DISTRICT_NAME)
             temp_district_id = mapping_dict.loc[:, "district id"].values.item()
             temp_districts.append(temp_district_id)
 
-st.write ('Selected Districts to fetch data')
+st.write ('Selected NCR Districts to fetch data')
 st.success (district_inp) 
 
     
@@ -115,7 +116,7 @@ if (final_df is not None) and (len(final_df)):
     #final_df = filter_column(final_df, "Minimum Age Limit", 45)
     #final_df = filter_column(final_df, "Vaccine", "COVISHIELD")
     #final_df = filter_column(final_df, "Vaccine", "COVAXIN")
-    final_df = filter_capacity(final_df, "Available Capacity", 0)
+    final_df = filter_capacity(final_df, "Available Capacity", 5)
     #final_df = filter_capacity(final_df, "Dose 1", 0)
     #final_df = filter_capacity(final_df, "Dose 2", 0)
     #final_df = filter_column(final_df, "Fees", "Paid")
