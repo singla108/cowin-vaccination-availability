@@ -4,7 +4,7 @@ Script to check the available NCR slots for Covid-19 Vaccination Centers from Co
 This work took reference from the work done by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability) while enhancing it. 
 
 # Installing Python
-Python is a programming language that is powerful but easy to learn. It is free, platform-independent, and popular among scientists.
+Python is a programming language that is powerful but easy to learn. It is free, platform-independent.
 
 ## Recommended Method: Anaconda
 The Anaconda Python distribution is an easily-installable bundle of Python and many of the libraries used throughout this class. Unless you have a good reason not to, we recommend that you use Anaconda.
