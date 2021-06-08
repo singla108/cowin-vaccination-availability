@@ -1,7 +1,7 @@
 # CoWIN vaccination slot availability using Python
-Script to check the available NCR slots for Covid-19 Vaccination Centers from CoWIN API in India. This CANNOT book slots automatically, you need to use CoWIN website to book the slots. 
+Script to check the available NCR slots for Covid-19 Vaccination Centers from CoWIN API in India. This program CANNOT book slots automatically, you need to use CoWIN website to book the slots. 
 
-This work took reference of the work done by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability) and enhanced it. 
+This work took reference from the work done by Bhavesh Bhatt (https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability) while enhancing it. 
 
 # Installing Python
 Python is a programming language that is powerful but easy to learn. It is free, platform-independent, and popular among scientists.
@@ -31,46 +31,20 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 # Usage
 - Clone the repository. using `! Git Clone https://github.com/singla108/cowin-vaccination-availability.git`
 - The tool only works with Indian IP addresses so disconnect your VPN if needed.
-- Enter the command - `cd cowin-vaccination-slot-availability/`
+- Enter the command - `cd cowin-vaccination-availability/`
 - Install all the dependencies - `! pip3 install -r requirements.txt`
 - Run Anaconda Promt (Run as Administrator) From Start Menu.
-- Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\cowin-vaccination-slot-availability`
+- Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\cowin-vaccination-availability`
 - Run `streamlit run app.py`
 
 -   You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
-  Network URL: http://192.168.1.7:8501
-
-# Demo
-![](https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability/blob/main/demo/demo_1.gif)
-# Articles
-&nbsp;
-[Link to the article 1](https://analyticsindiamag.com/data-scientist-creates-python-script-to-track-available-slots-for-covid-vaccinations/)    
-&nbsp;
-[Link to the article 2](https://yourstory.com/2021/05/paytm-launches-covid-19-vaccine-finder-tracks-slot-availability/amp)
-
-## To view the video
-
-<table>
-   <tr>
-      <td><a href="http://www.youtube.com/watch?v=tZ2xA19ZALA" target="_blank"><img height="50" src = "https://img.shields.io/youtube/views/tZ2xA19ZALA?color=blue&label=Watch%20on%20YouTube&logo=youtube&logoColor=red&style=for-the-badge"></a></td>
-   </tr>
-</table>
-
-or click on the image below
-
-[![Python Script to Track Available Slots For Covid-19 Vaccinations in India](http://img.youtube.com/vi/tZ2xA19ZALA/0.jpg)](http://www.youtube.com/watch?v=tZ2xA19ZALA)
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbhattbhavesh91%2Fcowin-vaccination-slot-availability&count_bg=%233D8CC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Repository+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ### Want to know more about me?
 ## Follow Me
-<a href="https://twitter.com/_bhaveshbhatt" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/tw.png" width="30"></a>
-<a href="https://www.youtube.com/bhaveshbhatt8791/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/ytb.png" width="30"></a>
-<a href="https://www.youtube.com/PythonTricks/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/python_logo.png" width="30"></a>
-<a href="https://github.com/bhattbhavesh91" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/gthb.png" width="30"></a>
-<a href="https://www.linkedin.com/in/bhattbhavesh91/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
+
+<a href="https://www.linkedin.com/in/singlaashish/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
 
 <!--- <h3 align="center">Show your &nbsp;❤️&nbsp; & support by starring the repository!</h3>-->
 <h3 align="center">Show your support by starring the repository 😊</h3>
