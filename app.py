@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('CoWIN NCR vaccination slot availability application for today + 5 days || Developed by Ashish Singla')
+st.success('CoWIN NCR vaccination slot availability application for today + 5 days')
 st.write('Program code is available at github: https://github.com/singla108/cowin-vaccination-availability You can download, modify the code for districts to run on your personal machine') 
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
@@ -59,9 +59,9 @@ valid_states = list(np.unique(mapping_df["state_name"].values))
 unique_districts_all = []
 temp_districts = []
 
-numdays = 5 # [PLEASE CHANGE] can give number of days i.e. today + days to get the data from COWIN 
+numdays = 5 # [CONFIGURATIONS WHICH CAN CHANGE] Give number of days i.e. today + days to get the data from COWIN public APIs 
 
-# [PLEASE CHANGE] provide districts to get data, please refer district_mapping.csv to change if required. 
+# [CONFIGURATIONS WHICH CAN CHANGE] provide districts to get data, please use district_mapping.csv to get India district names to change 
 district_inp = ['Gurgaon', 'Faridabad', 'Gautam Buddha Nagar', 'New Delhi', 'South Delhi', 'South East Delhi', 'South West Delhi','Central Delhi','East Delhi','Shahdara','North Delhi', 'North East Delhi','North West Delhi','West Delhi'] 
     
 for DISTRICT_NAME in district_inp:
@@ -82,6 +82,7 @@ browser_header = {'User-Agent': temp_user_agent.random}
 
 final_df = None
 
+# Program run in loop for Date and then fetched Ditrict Ids and connect to Public Cowin API to get data from districts and on date 
 for INP_DATE in date_str:
        for DIST_IDs in temp_districts:
             URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id={}&date={}".format(DIST_IDs, INP_DATE)
@@ -111,7 +112,7 @@ if (final_df is not None) and (len(final_df)):
     final_df.drop_duplicates(inplace=True)
     final_df.rename(columns=rename_mapping, inplace=True)
 
-    # [PLEASE CHANGE] uncomment the following lines if you want to filter the output with that filter
+    # [CONFIGURATIONS WHICH CAN CHANGE] uncomment the following lines if you want to filter the output with that filter
     #final_df = filter_column(final_df, "Minimum Age Limit", 18)
     #final_df = filter_column(final_df, "Minimum Age Limit", 45)
     #final_df = filter_column(final_df, "Vaccine", "COVISHIELD")
@@ -121,9 +122,12 @@ if (final_df is not None) and (len(final_df)):
     #final_df = filter_capacity(final_df, "Dose 2", 0)
     #final_df = filter_column(final_df, "Fees", "Paid")
 
+    # Print current date and time 
     st.write('Date/Time: ' + datetime.datetime.now().strftime("%d/%B/%Y, %H:%M:%S"))
     table = deepcopy(final_df)
     table.reset_index(inplace=True, drop=True)
+    
+    # Display the data in table 
     st.table(table)
 
 else:
