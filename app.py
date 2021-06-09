@@ -133,7 +133,8 @@ else:
     st.error("Unable to fetch data currently, please try after sometime")
         
 
-pageviews=Pageviews()
-pageviews.append('dummy')
-pg_views = len(pageviews)
-footer(pg_views)
+#pageviews=Pageviews()
+#pageviews.append('dummy')
+#pg_views = len(pageviews)
+#footer(pg_views)
+footer()
