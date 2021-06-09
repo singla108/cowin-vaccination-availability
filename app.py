@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('Current vaccination slot availability for Delhi NCR region using public CoWIN APIs(https://apisetu.gov.in/public/api/cowin). \n Please use CoWIN site to book your vaccination slot')
+st.success('Current vaccination slot availability for Delhi NCR region using public CoWIN APIs(https://apisetu.gov.in/public/api/cowin). Please use CoWIN site to book your vaccination slot')
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
@@ -122,12 +122,12 @@ if (final_df is not None) and (len(final_df)):
     #final_df = filter_column(final_df, "Fees", "Paid")
 
     # Print current date and time 
-    st.write('Date/Time: ' + datetime.datetime.now().strftime("%d/%B/%Y, %H:%M:%S"))
+    st.write('Date/Time: ' + datetime.datetime.now().strftime("%d/%B/%Y, %H:%M:%S") + ' India')
     table = deepcopy(final_df)
     table.reset_index(inplace=True, drop=True)
     
-    # Display the data in table 
-    st.table(table)
+    # Display the data in dataframe 
+    st.dataframe(table)
 
 else:
     st.error("Unable to fetch data currently, please try after sometime")
