@@ -51,7 +51,7 @@ rename_mapping = {
     }
 
 
-st.success('Current COVID-19 vaccination slot availability for Delhi NCR region using public CoWIN APIs(https://apisetu.gov.in/public/api/cowin). Please use CoWIN site to book your vaccination slot')
+st.success('Current COVID-19 vaccination availability for Delhi NCR region using public CoWIN APIs(https://apisetu.gov.in/public/api/cowin) in table format. Please use CoWIN (https://www.cowin.gov.in/) to book your vaccination slot')
 
 valid_states = list(np.unique(mapping_df["state_name"].values))
 
@@ -61,7 +61,7 @@ temp_districts = []
 numdays = 2 # [CONFIGURATIONS WHICH CAN CHANGE] Give number of days i.e. today + days to get the data from COWIN public APIs 
 
 # [CONFIGURATIONS WHICH CAN CHANGE] provide districts to get data, please use district_mapping.csv to get India district names to change 
-district_inp = ['Gurgaon', 'Faridabad', 'Gautam Buddha Nagar', 'New Delhi', 'South Delhi', 'South East Delhi', 'South West Delhi','Central Delhi','East Delhi','Shahdara','North Delhi', 'North East Delhi','North West Delhi','West Delhi'] 
+district_inp = ['New Delhi', 'Gurgaon', 'South Delhi', 'South East Delhi', 'South West Delhi','Central Delhi','East Delhi','Shahdara','North Delhi', 'North East Delhi','North West Delhi','West Delhi', 'Faridabad', 'Gautam Buddha Nagar'] 
     
 for DISTRICT_NAME in district_inp:
             mapping_dict = filter_column(mapping_df, "district name", DISTRICT_NAME)
