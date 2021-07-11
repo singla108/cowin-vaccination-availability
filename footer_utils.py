@@ -56,7 +56,7 @@ def footer():
     myargs = [
         "Developed by: ",
         link("https://www.linkedin.com/in/singlaashish/", "Ashish Singla"),
-        "  | Program code is available at github to refer, and update for your own districts (copy and update using readme available at github): ",  link("https://github.com/singla108/cowin-vaccination-availability", "Link"),
+        "  | Program code is available at github to refer, and update for your districts (copy, update & run on your machine using readme available at github): ",  link("https://github.com/singla108/cowin-vaccination-availability", "Link"),
         "   ",
       ]
     layout(*myargs)
